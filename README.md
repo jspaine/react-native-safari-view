@@ -101,6 +101,7 @@ __safariOptions__
 - `barTintColor` - A `String` containing a hex, rgba or rgba color to use for the background of the browser controls (only available on iOS 10 and higher)
 - `fromBottom` - A 'Boolean' indicating to open the Safari View from the bottom
 - `dismissButtonStyle` - A `String` indicating which dismiss button style to use (iOS 11+ only). Options are `"Close"`, `"Cancel"` and `"Done"` (default)
+- `preferNative` - A 'Boolean' indicating whether to try to open universal links in the native app, before falling back to opening in Safari View
 
 __Examples__
 ```js
@@ -110,6 +111,7 @@ SafariView.show({
   tintColor: "#000", // optional
   barTintColor: "#fff", // optional
   dismissButtonStyle: "Close", // optional
+  preferNative: false, // optional
 });
 ```
 
